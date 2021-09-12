@@ -36,7 +36,17 @@ This dataset contains 500 training images as well as one thousand testing images
 This dataset consists of colour images of objects belonging to 101 classes. 
 - Fei-Fei, Li, Rob Fergus, and Pietro Perona. "[One-shot learning of object categories.](http://vision.stanford.edu/documents/Fei-FeiFergusPerona2006.pdf)" IEEE transactions on pattern analysis and machine intelligence 28.4 (2006): 594-611.
 
+## Experiments
 
+The topics relating to optimizers address different concerns and the hyperparameters of each approach are vastly different. Therefore, we have experiments for each idea and then some comparisons at the end.
+
+### Stocastic Gradient Descent
+
+### Mommentum
+
+### Cyclical Learning Rates
+
+### Stocastic Gradient Descent with Warm Restarts
 
 The summary can contain but is not limited to:
 
