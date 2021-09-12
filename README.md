@@ -23,9 +23,13 @@ We evaluate our approach on 3 publically avaliable datasets.
 #### CIFAR-10
 
 This dataset contains 60k color images which are uniformly distributed accross 10 classes. The images are of size 4x32x32. 
-- [Learning Multiple Layers of Features from Tiny Images](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf), Alex Krizhevsky, 2009.
+- Alex Krizhevsky. [Learning Multiple Layers of Features from Tiny Images](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf), 2009.
 
 #### STL-10
+
+This dataset contains 500 training images as well as one thousand testing images per class. Additionally, the dataset also contains 100k unlabeled images, which do not use for training, thus our model doesn't have state of the art performance.
+
+- Adam Coates, Honglak Lee, Andrew Y. Ng. [An Analysis of Single Layer Networks in Unsupervised Feature Learning AISTATS](https://cs.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf), 2011
 
 #### Caltech-101
 
@@ -41,8 +45,6 @@ The summary can contain but is not limited to:
 - Commands to reproduce your experiments.
 
 - Write-up of your findings and conclusions.
-
-- Ipython notebooks can be organized in `notebooks`.
 
 ## Reference
 
