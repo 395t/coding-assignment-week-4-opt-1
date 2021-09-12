@@ -55,6 +55,7 @@ We trained for 20 epochs with a learning rate of 0.01, measuring validation loss
 **CIFAR-10**
 
 Our baseline model without momentum had a performance of 1.3401 loss, 50.67% accuracy while our best performing model using CM reported 0.5305 loss, 83.06% accuracy and the best performing model using NAG reported 0.4804 loss, 84.33% accuracy.
+
 CM | '
 :-|-:
 ![CM Loss](imgs/lossCMCIFAR.png) | ![CM Acc](imgs/accCMCIFAR.png)
@@ -70,6 +71,7 @@ CM vs NAG | '
 **STL10**
 
 Our baseline model without momentum had a performance of 2.2834 loss, 13.25% accuracy while our best performing model using CM reported 1.8854 loss, 25.00% accuracy and the best performing model using NAG reported 1.7859 loss, 29.49% accuracy.
+
 CM | '
 :-|-:
 ![CM Loss](imgs/lossCMSTL.png) | ![CM Acc](imgs/accCMSTL.png)
@@ -85,6 +87,7 @@ CM vs NAG | '
 **Caltech101**
 
 Our baseline model without momentum had a performance of 4.2107 loss, 12.44% accuracy while our best performing model using CM reported 3.8335 loss, 19.97% accuracy and the best performing model using NAG reported 3.6118 loss, 22.58% accuracy.
+
 CM | '
 :-|-:
 ![CM Loss](imgs/lossCMCAL.png) | ![CM Acc](imgs/accCMCAL.png)
