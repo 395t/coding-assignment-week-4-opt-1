@@ -44,7 +44,7 @@ The topics relating to optimizers address different concerns and the hyperparame
 
 ### Momentum (CM) and Nesterov's Accelerated Gradient (NAG)
 
-To understand the importance of training with momentum we trained a VGG-11 style model with different momentum coefficients as well as testing Nesterov's Accelerated Gradient across 3 datasets. The code is located in notebooks/cm_and_nag.ipynb.
+To understand the importance of training with momentum we trained a VGG-11 style model with different momentum coefficients as well as testing Nesterov's Accelerated Gradient across 3 datasets. The code is located in notebooks/MomentumExperiments.ipynb.
 
 **Architecture**
 
