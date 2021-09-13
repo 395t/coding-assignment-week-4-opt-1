@@ -220,11 +220,11 @@ The third part of the experiment is running the best model from earlier approach
 
 Triangular | '
 :-|-:
-![Triangular Loss](imgs/triangular-loss.png) | ![Triangular Acc](imgs/triangular-val-caltech.png)
+![Triangular Loss](imgs/triangular-loss.png) | ![Triangular Acc](imgs/triangle-val-caltech.png)
 
 Triangular2 | '
 :-|-:
-![Triangular2 Loss](imgs/triangular2-loss.png) | ![Triangular2 Acc](imgs/triangular2-val-caltech.png)
+![Triangular2 Loss](imgs/triangular2-loss.png) | ![Triangular2 Acc](imgs/triangle2-val-caltech.png)
 
 Exp Range | '
 :-|-:
