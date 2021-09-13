@@ -238,6 +238,13 @@ SGDR versus baseline scheme for STL10 on Resnet-18 model | '
 :-|-:
 ![TrainingLoss](imgs/imagesTk/training_loss_STL_Resnet_32.jpg) | ![Validation loss](imgs/imagesTk/validation_loss_Resnet_STL_32.jpg)
 
+**Tables**
+
+
+Table capturing error and accuracy for Resnet-18 model on different dataset and learning rate settings | '
+:-|-:
+![Table](imgs/imagesTk/Resnet-Table.png)
+
 ## Reference
 
 VGG Architecture: https://pytorch.org/vision/stable/_modules/torchvision/models/vgg.html
