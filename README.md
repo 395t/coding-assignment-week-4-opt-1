@@ -282,16 +282,16 @@ Table capturing error and accuracy for VGGNet model on different dataset and lea
 :-|-:
 ![Table](imgs/imagesTk/VGG-Table.png)
 
-# Comparing Between Different Approaches
-
-Each section shows a large improvement over the preceding section. We see that adding momentum to SGD can increase the performance of SGD which is better than GD. Futhermore, CLR is shown to boost the speed of convergence for these previous methods, showing a considerable speedup. 
-
-
 **Observations**
 
 1) VGGNet with Caltech dataset is having high training accuracies but worst test accuracy for any of the settins of learning rate. (Same goes for ResNet-18)
 2) VGGNet is performing poorly for STL-10 dataset and the highest accuracy(30%) is for constant learning rate of 0.05. Changing learning rate to 0.1 with SGDR severely effects the accuracy.(22 epochs)
 3) Cifar10 performance on VGG and ResNet-18 are comparatively higher than any other dataset. Cifar10 is one of the datasets used in the SGDR paper. 
+
+
+# Comparing Between Different Approaches
+
+Each section shows a large improvement over the preceding section. We see that adding momentum to SGD can increase the performance of SGD which is better than GD. Futhermore, CLR is shown to boost the speed of convergence for these previous methods, showing a considerable speedup. 
 
 
 ## Reference
