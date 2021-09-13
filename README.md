@@ -178,7 +178,7 @@ Triangular | '
 
 Triangular2 | '
 :-|-:
-![Triangular2 Loss](imgs/triangular2-loss.png) | ![Triangular2 Acc](imgs/triangular2-val.png)
+![Triangular2 Loss](imgs/triangular2-loss-CIFAR.png) | ![Triangular2 Acc](imgs/triangular2-val-CIFAR.png)
 
 Exp Range | '
 :-|-:
