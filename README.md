@@ -20,6 +20,8 @@ In these experiments we used a VGG-11 architecture as shown below.
 ![VGG-11 Architecture](imgs/vgg-11-arch.png)
 We trained for 20 epochs, measuring validation loss and accuracy across each epoch.
 
+Another model which we tried to use initially is standard ResNet-18 model.
+
 ## Datasets
 
 We evaluate our approach on 3 publically avaliable datasets. 
@@ -245,6 +247,17 @@ Table capturing error and accuracy for Resnet-18 model on different dataset and 
 :-|-:
 ![Table](imgs/imagesTk/Resnet-Table.png)
 
+
+Table capturing error and accuracy for VGGNet model on different dataset and learning rate settings | '
+:-|-:
+![Table](imgs/imagesTk/VGG-Table.png)
 ## Reference
 
 VGG Architecture: https://pytorch.org/vision/stable/_modules/torchvision/models/vgg.html
+ResNet Architecture: https://pytorch.org/hub/pytorch_vision_resnet/
+https://towardsdatascience.com/residual-network-implementing-resnet-a7da63c7b278
+
+Cosine Annealing for SGDR: https://pytorch.org/docs/stable/generated/torch.optim.lr_scheduler.CosineAnnealingWarmRestarts.html
+
+MultiStep LR for baseline in SGDR: https://pytorch.org/docs/stable/generated/torch.optim.lr_scheduler.MultiStepLR.html
+
