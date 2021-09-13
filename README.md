@@ -230,7 +230,7 @@ Exp Range | '
 :-|-:
 ![Exp Range Loss](imgs/exp_rangetraining-caltech.png) | ![Exp Range Acc](imgs/exp-val-caltech.png)
 
-# Conclusion
+**Conclusion**
 
 In conclusion using CLR can lead to a significant boost in speed to convergence. It takes less iterations to converge to the ideal performance than the best model that our group found. This is in line with the results of the paper.
 
