@@ -50,7 +50,7 @@ The first of our experiments looks at how Stocastic Gradient Descent (SGD) and S
 
 As noted in the paper 2SGD is very computationally costly, because each iteration preforms a computation which involves a large dense matrix. For the experiment we decided to replace 2SGD with Averaged Stochastic Gradient Descent (ASGD), which was used as a less costly alternative to 2SGD.
 
-We trained a VGG-11 style model with GD, SGD, and ASGD across three different datasets. For SGD and ASGD a batch size of 32, was used to speed up training slightly, and a learning rate of .01. The models using GD had a learning rate of .1. Momentum and weight decay were not used in any of the models. The code is located in notebooks/SGDExperiments.ipynb.
+We trained a VGG-11 style model with GD, SGD, and ASGD across three different datasets. For SGD and ASGD a batch size of 32, was used to speed up training slightly, and a learning rate of .01. The models using GD had a learning rate of .1. Momentum and weight decay were not used in any of the models. The code is located in `notebooks/SGDExperiments.ipynb`.
 
 
 **STL10**
