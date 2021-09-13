@@ -46,6 +46,68 @@ The topics relating to optimizers address different concerns and the hyperparame
 
 ### Stocastic Gradient Descent
 
+The first of our experiments looks at how Stocastic Gradient Descent (SGD) and Second Order Stocastic Gradient Descent (2SGD) are a better alternative to Standard Gradient Descent (GD), especially with the introduction of larger datasets. 
+
+As noted in the paper 2SGD is very computationally costly, because each iteration preforms a computation which involves a large dense matrix. For the experiment we decided to replace 2SGD with Averaged Stochastic Gradient Descent (ASGD), which was used as a less costly alternative to 2SGD.
+
+We trained a VGG-11 style model with GD, SGD, and ASGD across three different datasets. For SGD and ASGD a batch size of 32, was used to speed up training slightly, and a learning rate of .01. The models using GD had a learning rate of .1. Momentum and weight decay were not used in any of the models. The code is located in notebooks/SGDExperiments.ipynb.
+
+
+**STL10**
+
+Each of the models were trained for 20 epochs. GD performed notably worse than both of the versions of SGD, having a very low drop in change in loss and underperforming on the test set with an accuracy of 14.35%. SGD and ASGD preformed similarly with a much more noticable decrease in training loss and higher test accuracies at 23.76% and 24.05% respectively.
+
+
+![Loss](imgs/STL10_GD_SGD_ASGD.png) 
+
+|   | STL-10 | 
+|---|---|
+|  GD | 14.35 |
+|  SGD | 23.76 |
+|  ASGD | **24.05**  |
+
+
+**Caltech101**
+
+Each of the models were trained for 20 epochs. Once again GD performed notably worse than both of the versions of SGD, having a very low drop in change in loss and underperforming on the test set with an accuracy of 11.52%. SGD and ASGD preformed similarly, with ASGD doing slightly better than SGD. SGD had a test accuracy of 20.66% and ASGD has a test accuracy of 21.66%.
+
+![Loss](imgs/Caltech101_GD_SGD_ASGD.png) 
+
+|   | CalTech101 | 
+|---|---|
+|  GD | 11.52  | 
+|  SGD | 20.66 |
+|  ASGD | **21.66**  |
+
+
+**CIFAR-10**
+
+Each of the models were trained for 10 epochs. Similarly to the other datasets GD was very slow in convergence and preformed poorly on the test set. Additionally, the size of the training set and the use of GD caused the ipykernal to fail due to how memory was required to compute the gradient that we had to split the data between two batches. SGD and ASGD both out performed GD with test accuracies of 72.33 and 72.59 respectively. GD has a test accuracy of **coming soon**. GD also took on average 3 times as long per epoch as SGD and ASGD.
+
+**graph coming soon**
+
+|   | CIFAR-10 |
+|---|---|
+|  GD | **coming soon** |
+|  SGD | 72.33 |
+|  ASGD | **72.59** |
+
+
+**Analysis**
+
+Our team was able to show that with moderately sized or large datasets SGD and ASGD greatly outperformed GD, GD simply uses to much memory, convergest to slowly and has to large of a training time per epoch compared to SGD and ASGD to be used when training on large datasets. This aligns with the papers claims that GD is not a viable optimizer for anything other than very small datasets.
+
+Our results regarding the comparison between SGD and ASGD also align with the paper. Overall, they perform very similarly obtaining test accuracies that are close and having a similar rate of convergence. We also saw that ASGD has a slightly faster rate of conergence and higher accuracy. If we had had the time to conduct further test and train over more epochs we would probably be able to see a greater difference in convergence rate, as was seen in the paper.
+
+Overall, our experiments show that using a Stocastic Gradient Descent based optimizer will lead to faster convergence on larger datasets than a standard Gradient Descent based optimizer.
+
+|   | STL-10 | CalTech101 | CIFAR-10 |
+|---|---|---|---|
+|  GD | 14.35 | 11.52  |  **coming soon** |
+|  SGD | 23.76 | 20.66 |  72.33 |
+|  ASGD | **24.05**  | **21.66**  |  **72.59** |
+
+
 ### Momentum (CM) and Nesterov's Accelerated Gradient (NAG)
 
 To understand the importance of training with momentum we trained a VGG-11 style model with different momentum coefficients as well as testing Nesterov's Accelerated Gradient across 3 datasets. The code is located in `notebooks/MomentumExperiments.ipynb`.
