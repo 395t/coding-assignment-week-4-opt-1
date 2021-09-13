@@ -214,6 +214,24 @@ Exp Range | '
 ![Exp Range Loss](imgs/exp-loss.png) | ![Exp Range Acc](imgs/exp-val.png)
 
 
+**Caltech101**
+
+The third part of the experiment is running the best model from earlier approaches on the Caltech dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. 
+
+Triangular | '
+:-|-:
+![Triangular Loss](imgs/triangular-loss.png) | ![Triangular Acc](imgs/triangle-val-caltech.png)
+
+Triangular2 | '
+:-|-:
+![Triangular2 Loss](imgs/triangular2-loss.png) | ![Triangular2 Acc](imgs/triangle2-val-caltech.png)
+
+Exp Range | '
+:-|-:
+![Exp Range Loss](imgs/exp-loss.png) | ![Exp Range Acc](imgs/exp-val-caltech.png)
+
+
+
 ### Stocastic Gradient Descent with Warm Restarts
 
 
