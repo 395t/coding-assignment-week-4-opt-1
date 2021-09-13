@@ -212,13 +212,28 @@ Exp Range | '
 ### Stocastic Gradient Descent with Warm Restarts
 
 
-**SGDR with different settings for STL10 on VGG model**
 
-
-STL10-different-settings-VGG-model | '
+SGDR with different settings for STL10 on VGG model | '
 :-|-:
 ![TrainingLoss](imgs/imagesTk/training_loss_VGG_STL_22.jpg) | ![Validation loss](imgs/imagesTk/validation_loss_VGG_STL_22.jpg)
 
+
+SGDR with different settings for Caltech101 on VGG model | '
+:-|-:
+![TrainingLoss](imgs/imagesTk/training_loss_VGG_Caltech_200.jpg) | ![Validation loss](imgs/imagesTk/validation_loss_Caltech101_VGG_200.jpg)
+
+
+SGDR with different settings for Cifar-10 on Resnet-18 model | '
+:-|-:
+![TrainingLoss](imgs/imagesTk/training_loss_ResNet_Cifar10_32.jpg) | ![Validation loss](imgs/imagesTk/validation_loss_ResNet_Cifar10_32.jpg)
+
+SGDR versus baseline scheme versus constant Lr=0.05 for Caltech101 on Resnet-18 model | '
+:-|-:
+![TrainingLoss](imgs/imagesTk/training_loss_Resnet_Caltech_32.jpg) | ![Validation loss](imgs/imagesTk/validation_loss_Resnet_Caltech_32.jpg)
+
+SGDR versus baseline scheme for STL10 on Resnet-18 model | '
+:-|-:
+![TrainingLoss](imgs/imagesTk/training_loss_STL_Resnet_32.jpg) | ![Validation loss](imgs/imagesTk/validation_loss_Resnet_STL_32.jpg)
 
 ## Reference
 
