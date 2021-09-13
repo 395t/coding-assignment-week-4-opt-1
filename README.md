@@ -263,7 +263,7 @@ SGDR versus baseline scheme for STL10 on Resnet-18 model | '
 
 Conversion (in general) pattern in Caltech101 versus STL-10
 :-|-:
-![caltech](imgs/imagesTk/CaltechVGG.png) | ![STL-10(imgs/imagesTk/STL.png)
+![caltech](imgs/imagesTk/CaltechVGG.png) | ![STL-10](imgs/imagesTk/STL.png)
 
 
 **Tables**
