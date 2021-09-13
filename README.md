@@ -18,7 +18,7 @@ The model is is modelled after VGGNet and involves 4 convolutional layers and th
 
 In these experiments we used a VGG-11 architecture as shown below.
 ![VGG-11 Architecture](imgs/vgg-11-arch.png)
-We trained for 20 epochs with a learning rate of 0.01, measuring validation loss and accuracy across each epoch.
+We trained for 20 epochs, measuring validation loss and accuracy across each epoch.
 
 ## Datasets
 
