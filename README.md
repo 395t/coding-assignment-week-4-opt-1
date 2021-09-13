@@ -281,6 +281,10 @@ Table capturing error and accuracy for VGGNet model on different dataset and lea
 :-|-:
 ![Table](imgs/imagesTk/VGG-Table.png)
 
+# Comparing Between Different Approaches
+
+Each section shows a large improvement over the preceding section. We see that adding momentum to SGD can increase the performance of SGD which is better than GD. Futhermore, CLR is shown to boost the speed of convergence for these previous methods, showing a considerable speedup. 
+
 
 **Observations**
 
