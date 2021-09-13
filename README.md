@@ -179,6 +179,7 @@ To understand the potential impact of Cyclical Learning Rates, we compared Stoca
 
 **CIFAR**
 
+The first part of the experiment is running the best model from earlier approaches on the CIFAR dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. However, we can see that using CLR can provide a boost in training, which is in line with the results of the CLR paper.
 
 Triangular | '
 :-|-:
@@ -194,6 +195,8 @@ Exp Range | '
 
 
 **STL10**
+
+The second part of the experiment is running the best model from earlier approaches on the STL10 dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. We can see however, the results are much more volatile as this is a much smaller dataset from CIFAR.
 
 
 Triangular | '
