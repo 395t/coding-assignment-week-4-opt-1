@@ -211,15 +211,14 @@ Exp Range | '
 
 ### Stocastic Gradient Descent with Warm Restarts
 
-The summary can contain but is not limited to:
 
-- Code structure.
+**SGDR with different settings for STL10 on VGG model**
 
-- Commands to reproduce your experiments.
 
-- Write-up of your findings and conclusions.
+STL10-different-settings-VGG-model | '
+:-|-:
+![TrainingLoss](imgs/imagesTk/training_loss_VGG_STL_22.jpg) | ![Validation loss](imgs/imagesTk/validation_loss_VGG_STL_22.jpg)
 
-- Ipython notebooks can be organized in `notebooks`.
 
 ## Reference
 
