@@ -48,7 +48,7 @@ The topics relating to optimizers address different concerns and the hyperparame
 
 ### Momentum (CM) and Nesterov's Accelerated Gradient (NAG)
 
-To understand the importance of training with momentum we trained a VGG-11 style model with different momentum coefficients as well as testing Nesterov's Accelerated Gradient across 3 datasets. The code is located in notebooks/MomentumExperiments.ipynb.
+To understand the importance of training with momentum we trained a VGG-11 style model with different momentum coefficients as well as testing Nesterov's Accelerated Gradient across 3 datasets. The code is located in `notebooks/MomentumExperiments.ipynb`.
 
 **CIFAR-10**
 
@@ -104,6 +104,24 @@ CM vs NAG | '
 Our testing shows that incorporating momentum has a significant impact on model performance. Both the CM and NAG implementations way outperform the baselines across all datasets. The paper found that loss decreases for higher momentum coefficients, however our results did not show the same relationship. Most datasets had different coefficient values perform best and even had different coefficients perform best when comparing CM to NAG. Despite this discrepancy, our experiments do align with the paper when comparing NAG to CM. NAG performs better with respect to loss and accuracy across all datasets. In general it looks like using NAG momentum seems to be the best momentum strategy to improve model performance.
 
 ### Cyclical Learning Rates
+
+To understand the potential impact of Cyclical Learning Rates, we compared Stocastic Gradient Descent (SGD) with and without Cyclical Learning Rates. We compared across multiple datasets. The code for this section is located in `notebooks/CLR.ipynb`. Additionally we compared the different CLR modes (triangular, triangular2, and exp-range. 
+
+**STL10**
+
+
+Triangular | '
+:-|-:
+![Triangular Loss](imgs/triangular-loss.png) | ![Triangular Acc](imgs/triangular-val.png)
+
+Triangular2 | '
+:-|-:
+![Triangular2 Loss](imgs/triangular2-loss.png) | ![Triangular2 Acc](imgs/triangular2-val.png)
+
+Exp Range | '
+:-|-:
+![Exp Range Loss](imgs/exp-loss.png) | ![Exp Range Acc](imgs/exp-val.png)
+
 
 ### Stocastic Gradient Descent with Warm Restarts
 
