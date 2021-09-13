@@ -140,7 +140,7 @@ CM vs NAG | '
 
 **STL10**
 
-Our baseline model without momentum had a performance of 2.2834 loss, 13.25% accuracy while our best performing model using CM reported 1.8854 loss, 25.00% accuracy and the best performing model using NAG reported 1.7859 loss, 29.49% accuracy.
+Our baseline model without momentum had a performance of 2.2834 loss, 13.25% accuracy while our best performing model using CM reported 1.8854 loss, 25.00% accuracy and the best performing model using NAG reported 1.7859 loss, 29.49% accuracy. 
 
 CM | '
 :-|-:
@@ -181,7 +181,7 @@ To understand the potential impact of Cyclical Learning Rates, we compared Stoca
 
 **CIFAR**
 
-The first part of the experiment is running the best model from earlier approaches on the CIFAR dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. However, we can see that using CLR can provide a boost in training, which is in line with the results of the CLR paper.
+The first part of the experiment is running the best model from earlier approaches on the CIFAR dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. However, we can see that using CLR can provide a boost in training, which is in line with the results of the CLR paper. The best CLR model is the triangular2 which recieves a testset accuracy of 84.43% on the CIFAR dataset which is an improvement of 0.1 over the baseline.
 
 Triangular | '
 :-|-:
@@ -198,7 +198,8 @@ Exp Range | '
 
 **STL10**
 
-The second part of the experiment is running the best model from earlier approaches on the STL10 dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. We can see however, the results are much more volatile as this is a much smaller dataset from CIFAR.
+The second part of the experiment is running the best model from earlier approaches on the STL10 dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. We can see however, the results are much more volatile as this is a much smaller dataset from CIFAR. The best CLR model is the triangular which recieves a testset accuracy of 30.43% on the STL10 dataset which is an improvement of 0.11 over the baseline.
+
 
 
 Triangular | '
@@ -216,7 +217,7 @@ Exp Range | '
 
 **Caltech101**
 
-The third part of the experiment is running the best model from earlier approaches on the Caltech dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. 
+The third part of the experiment is running the best model from earlier approaches on the Caltech dataset and seeing how different CLRs can help with improving training. From the results we see that the best model with CLR and best model without CLR coverge between epoch 17-20. The best CLR model is the triangular which recieves a testset accuracy of 22.43% on the STL10 dataset which is an improvement of 0.11 over the baseline.
 
 Triangular | '
 :-|-:
