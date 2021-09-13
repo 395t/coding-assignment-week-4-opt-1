@@ -14,7 +14,11 @@ The task that we are studying is using VGGNet to do image classfication.
 
 ## Model Architecture
 
-The model is is modelled after VGGNet and involves 4 convolutional layers and then a linear layer to allow for classifications.
+The model is is modelled after VGGNet and involves 4 convolutional layers and then a linear layer to allow for classifications. 
+
+In these experiments we used a VGG-11 architecture as shown below.
+![VGG-11 Architecture](imgs/vgg-11-arch.png)
+We trained for 20 epochs with a learning rate of 0.01, measuring validation loss and accuracy across each epoch.
 
 ## Datasets
 
@@ -45,12 +49,6 @@ The topics relating to optimizers address different concerns and the hyperparame
 ### Momentum (CM) and Nesterov's Accelerated Gradient (NAG)
 
 To understand the importance of training with momentum we trained a VGG-11 style model with different momentum coefficients as well as testing Nesterov's Accelerated Gradient across 3 datasets. The code is located in notebooks/MomentumExperiments.ipynb.
-
-**Architecture**
-
-In these experiments we used a VGG-11 architecture as shown below.
-![VGG-11 Architecture](imgs/vgg-11-arch.png)
-We trained for 20 epochs with a learning rate of 0.01, measuring validation loss and accuracy across each epoch.
 
 **CIFAR-10**
 
