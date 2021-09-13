@@ -107,6 +107,22 @@ Our testing shows that incorporating momentum has a significant impact on model 
 
 To understand the potential impact of Cyclical Learning Rates, we compared Stocastic Gradient Descent (SGD) with and without Cyclical Learning Rates. We compared across multiple datasets. The code for this section is located in `notebooks/cyclicLearningRates.ipynb`. Additionally we compared the different CLR modes (triangular, triangular2, and exp-range. 
 
+**CIFAR**
+
+
+Triangular | '
+:-|-:
+![Triangular Loss](imgs/triangular-loss-CIFAR.png) | ![Triangular Acc](imgs/triangular-val-CIFAR.png)
+
+Triangular2 | '
+:-|-:
+![Triangular2 Loss](imgs/triangular2-loss.png) | ![Triangular2 Acc](imgs/triangular2-val.png)
+
+Exp Range | '
+:-|-:
+![Exp Range Loss](imgs/exp-loss.png) | ![Exp Range Acc](imgs/exp-val.png)
+
+
 **STL10**
 
 
