@@ -184,7 +184,7 @@ Triangular2 | '
 
 Exp Range | '
 :-|-:
-![Exp Range Loss](imgs/exp-loss.png) | ![Exp Range Acc](imgs/exp-val.png)
+![Exp Range Loss](imgs/exp-loss-CIFAR.png) | ![Exp Range Acc](imgs/exp-val-CIFAR.png)
 
 
 **STL10**
