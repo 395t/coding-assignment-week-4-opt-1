@@ -55,22 +55,23 @@ We trained a VGG-11 style model with GD, SGD, and ASGD across three different da
 
 **STL10**
 
-Each of the models were trained for 20 epochs. GD performed notably worse than both of the versions of SGD, having a very low drop in change in loss and underperforming on the test set with an accuracy of 14.35%. SGD and ASGD preformed similarly with a much more noticable decrease in training loss and higher test accuracies at 23.76% and 24.05% respectively.
+Each of the models were trained for 20 epochs. GD performed notably worse than both of the versions of SGD, having a very low drop in change in loss and underperforming on the test set with an accuracy of 14.35%. SGD and ASGD preformed similarly with a much more noticable decrease in training loss and higher test accuracies at 28.66% and 27.91% respectively.
 
-
+**Loss**
 ![Loss](imgs/STL10_GD_SGD_ASGD.png) 
 
 |   | STL-10 | 
 |---|---|
-|  GD | 14.35 |
-|  SGD | 23.76 |
-|  ASGD | **24.05**  |
+|  GD | 16.08 |
+|  SGD | **28.66** |
+|  ASGD | 27.91 |
 
 
 **Caltech101**
 
 Each of the models were trained for 20 epochs. Once again GD performed notably worse than both of the versions of SGD, having a very low drop in change in loss and underperforming on the test set with an accuracy of 11.52%. SGD and ASGD preformed similarly, with ASGD doing slightly better than SGD. SGD had a test accuracy of 20.66% and ASGD has a test accuracy of 21.66%.
 
+**Loss**
 ![Loss](imgs/Caltech101_GD_SGD_ASGD.png) 
 
 |   | CalTech101 | 
@@ -84,6 +85,7 @@ Each of the models were trained for 20 epochs. Once again GD performed notably w
 
 Each of the models were trained for 10 epochs. Similarly to the other datasets GD was very slow in convergence and preformed poorly on the test set. Additionally, the size of the training set and the use of GD caused the ipykernal to fail due to how memory was required to compute the gradient that we had to split the data between two batches. SGD and ASGD both out performed GD with test accuracies of 72.33 and 72.59 respectively. GD has a test accuracy of **coming soon**. GD also took on average 3 times as long per epoch as SGD and ASGD.
 
+**Loss**
 **graph coming soon**
 
 |   | CIFAR-10 |
@@ -103,9 +105,9 @@ Overall, our experiments show that using a Stocastic Gradient Descent based opti
 
 |   | STL-10 | CalTech101 | CIFAR-10 |
 |---|---|---|---|
-|  GD | 14.35 | 11.52  |  **coming soon** |
-|  SGD | 23.76 | 20.66 |  72.33 |
-|  ASGD | **24.05**  | **21.66**  |  **72.59** |
+|  GD | 16.08 | 11.52  |  **coming soon** |
+|  SGD | 28.66 | 20.66 |  72.33 |
+|  ASGD | **27.91**  | **21.66**  |  **72.59** |
 
 
 ### Momentum (CM) and Nesterov's Accelerated Gradient (NAG)
