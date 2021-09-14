@@ -177,7 +177,7 @@ Our testing shows that incorporating momentum has a significant impact on model 
 
 ### Cyclical Learning Rates
 
-To understand the potential impact of Cyclical Learning Rates, we compared Stocastic Gradient Descent (SGD) momentum set to 0.999, which as these performed the best in earlier sections. with and without Cyclical Learning Rates. We compared across multiple datasets. The code for this section is located in `notebooks/cyclicLearningRates.ipynb`. Additionally we compared the different CLR modes (triangular, triangular2, and exp-range. 
+To understand the potential impact of Cyclical Learning Rates, we compared Stocastic Gradient Descent (SGD) momentum set to 0.99, which as these performed the best in earlier sections. with and without Cyclical Learning Rates. We compared across multiple datasets. The code for this section is located in `notebooks/cyclicLearningRates.ipynb`. Additionally we compared the different CLR modes (triangular, triangular2, and exp-range. 
 
 **CIFAR**
 
